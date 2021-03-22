@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/desicion.css">
+    <title>Selección</title>
+</head>
+<body>
+    <header>
+        <h1>Selección Única</h1>
+    </header>
+    <form action="javascript:cotizar();" id="forma">
+
+      <p>El borde azul indica obligatorio</p>
+        <p>
+            <label accesskey="T">
+                <input type="checkbox" name="camisetaVerde" id="camisetaVerde">
+                Trae camiseta verde
+            </label>
+        </p>
+
+        <p>
+            <label accesskey="A">
+                <select name="edad" size="4">
+                    <option value="NINO">0 a 10</option>
+                    <option value="ADOLECENTE">11 a 14</option>
+                    <option value="JOVEN">15 A 17</option>
+                    <option value="ADULTO">18 A 40</option>
+
+                    <optgroup label="Mayores">
+                        <option value="MADURO">41 a 59</option>
+                        <option value="TERCERA EDAD">60 en adelante</option>
+                    </optgroup>
+                </select>
+            </label>
+        </p>     
+        <fieldset class="obligatorio">
+            <legend>Sexo</legend>
+            <p>
+                <label>
+                    <input type="radio" name="sexo" value="masculino" accesskey="M">
+                    Masculino
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="sexo" value="femenino" accesskey="F">
+                    Femenino
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <label accesskey="D">
+                <select name="dia" size="1" >
+                    <option>Selecciona dia</option>
+                    <option>Viernes</option>
+                    <option>Sabado</option>
+                    <option>Domingo</option>
+                </select>
+            </label>
+        </p>  
+        <p><input type="submit" value="cotizar" accesskey="C" id="cotizar"></p>
+        <p><output id="salida"></output></p>
+    </form>
+    <footer>
+        &copy; Copyright Laura Fernanda Gonzalez Vargas
+    </footer>
+
+    <script src="../js/desicion.js"></script>
+</body>
+</html>
